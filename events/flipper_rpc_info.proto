@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package metric.events;
+option java_package = "com.flipperdevices.pbmetric.events";
+
+message FlipperRpcInfo {
+  bool sdcard_is_available = 1;
+  int64 internal_free_byte = 2;
+  int64 internal_total_byte = 3;
+  int64 external_free_byte = 4;
+  int64 external_total_byte = 5;
+}

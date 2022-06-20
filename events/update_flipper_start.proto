@@ -1,0 +1,10 @@
+syntax = "proto3";
+
+package metric.events;
+option java_package = "com.flipperdevices.pbmetric.events";
+
+message UpdateFlipperStart {
+  string update_from = 1;
+  string update_to = 2;
+  int64 update_id = 3;
+}

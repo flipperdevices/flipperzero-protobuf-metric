@@ -1,0 +1,6 @@
+syntax = "proto3";
+
+package metric.events;
+option java_package = "com.flipperdevices.pbmetric.events";
+
+message AppOpen {}
