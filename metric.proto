@@ -1,14 +1,8 @@
 syntax = "proto3";
 
-import "events/app_open.proto";
-import "events/experimental_open_fm.proto";
-import "events/experimental_open_screenstreaming.proto";
 import "events/flipper_gatt_info.proto";
 import "events/flipper_rpc_info.proto";
-import "events/open_edit.proto";
-import "events/open_emulate.proto";
-import "events/open_save_key.proto";
-import "events/open_share.proto";
+import "events/open.proto";
 import "events/synchronization_end.proto";
 import "events/update_flipper_start.proto";
 import "events/update_flipper_end.proto";
@@ -36,17 +30,11 @@ message MetricReportResponse {
 
 message MetricEventsCollection {
   oneof event {
-    events.AppOpen app_open = 1;
+    events.Open open = 1;
     events.FlipperGattInfo flipper_gatt_info = 2;
     events.FlipperRpcInfo flipper_rpc_info = 3;
     events.UpdateFlipperStart update_flipper_start = 4;
     events.UpdateFlipperEnd update_flipper_end = 5;
-    events.OpenSaveKey open_save_key = 6;
-    events.OpenEmulate open_emulate = 7;
-    events.OpenEdit open_edit = 8;
-    events.OpenShare open_share = 9;
-    events.ExperimentalOpenFileManager experimental_open_fm = 10;
-    events.ExperimentalOpenScreenStreaming experimental_open_screenstreaming = 11;
     events.SynchronizationEnd synchronization_end = 12;
   }
 }
