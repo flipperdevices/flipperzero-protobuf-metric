@@ -21,13 +21,6 @@ message MetricReportRequest {
   repeated MetricEventsCollection events = 1;
 }
 
-message MetricReportResponse {
-  enum Status {
-    OK = 0;
-  }
-  Status status = 1;
-}
-
 message MetricEventsCollection {
   oneof event {
     events.Open open = 1;
