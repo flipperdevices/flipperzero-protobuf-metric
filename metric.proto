@@ -14,7 +14,9 @@ message MetricReportRequest {
   string uuid = 2;
   enum Platform {
     ANDROID = 0;
-    IOS = 1;
+    ANDROID_DEBUG = 1;
+    IOS = 2;
+    IOS_DEBUG = 3;
   }
   Platform platform = 3;
 
