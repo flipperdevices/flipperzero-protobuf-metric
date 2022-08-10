@@ -17,7 +17,9 @@ package metric;
 option java_package = "com.flipperdevices.pbmetric";
 
 message MetricReportRequest {
-  string uuid = 2;
+  string session_uuid = 4;
+  string version = 5;
+  string uuid = 2; // User uuid
   enum Platform {
     ANDROID = 0;
     IOS = 1;

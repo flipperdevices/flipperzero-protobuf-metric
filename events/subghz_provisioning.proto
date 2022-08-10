@@ -1,0 +1,25 @@
+syntax = "proto3";
+
+package metric.events;
+option java_package = "com.flipperdevices.pbmetric.events";
+
+message SubGhzProvisioning {
+  string region_network = 1;
+  string region_sim_1 = 2;
+  string region_sim_2 = 3;
+  string region_ip = 4;
+  string region_system = 5;
+  string region_provided = 6;
+  bool is_roaming = 7;
+
+  enum RegionSource {
+    SIM_NETWORK = 0;
+    SIM_COUNTRY = 1;
+    GEO_IP = 2;
+    SYSTEM = 3;
+    DEFAULT = 4;
+  }
+  RegionSource region_source = 8;
+}
+
+
