@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package metric.events;
+option java_package = "com.flipperdevices.pbmetric.events";
+
+message Open {
+  enum OpenTarget {
+    APP = 0;
+    SAVE_KEY = 1;
+    EMULATE = 2;
+    EDIT = 3;
+    SHARE = 4;
+    EXPERIMENTAL_FM = 5;
+    EXPERIMENTAL_SCREENSTREAMING = 6;
+  }
+  OpenTarget target = 1;
+}
