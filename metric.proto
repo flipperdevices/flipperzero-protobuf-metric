@@ -33,5 +33,6 @@ message MetricEventsCollection {
     events.UpdateFlipperStart update_flipper_start = 4;
     events.UpdateFlipperEnd update_flipper_end = 5;
     events.SynchronizationEnd synchronization_end = 12;
+    events.SubGhzProvisioning subghz_provisioning = 13;
   }
 }
