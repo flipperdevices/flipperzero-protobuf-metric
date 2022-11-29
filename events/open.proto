@@ -12,6 +12,9 @@ message Open {
     SHARE = 4;
     EXPERIMENTAL_FM = 5;
     EXPERIMENTAL_SCREENSTREAMING = 6;
+    SHARE_SHORTLINK = 7;
+    SHARE_LONGLINK = 8;
+    SHARE_FILE = 9;
   }
   OpenTarget target = 1;
 }
