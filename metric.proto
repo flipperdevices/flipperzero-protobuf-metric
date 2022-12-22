@@ -6,7 +6,7 @@ import "events/open.proto";
 import "events/synchronization_end.proto";
 import "events/update_flipper_start.proto";
 import "events/update_flipper_end.proto";
-import "events/subghz_provisioning.proto";
+import "events/sub_ghz_provisioning.proto";
 
 package metric;
 option java_package = "com.flipperdevices.pbmetric";
