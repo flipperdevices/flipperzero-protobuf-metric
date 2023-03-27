@@ -15,6 +15,9 @@ message Open {
     SHARE_SHORTLINK = 7;
     SHARE_LONGLINK = 8;
     SHARE_FILE = 9;
+    SAVE_DUMP = 10;
+    MFKEY32 = 11;
+    OPEN_NFC_DUMP_EDITOR = 12;
   }
   OpenTarget target = 1;
 }
