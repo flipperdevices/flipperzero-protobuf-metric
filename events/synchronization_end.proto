@@ -10,4 +10,5 @@ message SynchronizationEnd {
   int32 infrared_count = 4;
   int32 ibutton_count = 5;
   int64 synchronization_time_ms = 6;
+  int32 changes_count = 7;
 }
