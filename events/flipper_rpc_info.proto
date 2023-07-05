@@ -9,4 +9,6 @@ message FlipperRpcInfo {
   int64 internal_total_byte = 3;
   int64 external_free_byte = 4;
   int64 external_total_byte = 5;
+  string firmware_fork_name = 6;
+  string firmware_git_url = 7;
 }
