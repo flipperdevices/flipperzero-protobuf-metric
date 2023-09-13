@@ -18,6 +18,13 @@ message Open {
     SAVE_DUMP = 10;
     MFKEY32 = 11;
     OPEN_NFC_DUMP_EDITOR = 12;
+    OPEN_FAPHUB = 13;
+    OPEN_FAPHUB_CATEGORY = 14;
+    OPEN_FAPHUB_SEARCH = 15;
+    OPEN_FAPHUB_APP = 16;
+    INSTALL_FAPHUB_APP = 17;
+    HIDE_FAPHUB_APP = 18;
   }
   OpenTarget target = 1;
+  string arg = 2;
 }
