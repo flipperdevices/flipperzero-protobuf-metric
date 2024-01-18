@@ -7,6 +7,7 @@ import "events/synchronization_end.proto";
 import "events/update_flipper_start.proto";
 import "events/update_flipper_end.proto";
 import "events/sub_ghz_provisioning.proto";
+import "events/debug.proto";
 
 package metric;
 option java_package = "com.flipperdevices.pbmetric";
@@ -35,5 +36,6 @@ message MetricEventsCollection {
     events.UpdateFlipperEnd update_flipper_end = 5;
     events.SynchronizationEnd synchronization_end = 12;
     events.SubGhzProvisioning subghz_provisioning = 13;
+    events.DebugInfo debug_info = 14;
   }
 }
