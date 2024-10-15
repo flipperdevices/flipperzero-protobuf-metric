@@ -24,6 +24,8 @@ message Open {
     OPEN_FAPHUB_APP = 16;
     INSTALL_FAPHUB_APP = 17;
     HIDE_FAPHUB_APP = 18;
+    OPEN_INFRARED_LIBRARY = 19;
+    SAVE_INFRARED_LIBRARY = 20;
   }
   OpenTarget target = 1;
   string arg = 2;
